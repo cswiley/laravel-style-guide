@@ -2,7 +2,7 @@
 
 function styleGuideControllerRoute($route)
 {
-    $route = "CameronWiley\StyleGuide\StyleGuideController$route";
+    $route = "Cswiley\StyleGuide\StyleGuideController$route";
     return $route;
 }
 
