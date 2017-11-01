@@ -1,5 +1,5 @@
 {
-    "name": "cswiley/laravel-style-guide",
+    "name": "cswiley/laravel-style-guide-builder",
     "description": "Simple style guide builder for laravel",
     "license": "MIT",
     "authors": [

@@ -1,20 +1,21 @@
 # Laravel Style Guide
-Style guide builder for laravel projects
+Use to quickly generate living style guides for laravel projects.
 
-Simple style guide builder that currently is setup for foundation zurb.
-
-## Usage
-1. Add as a dependency to composer.json
-2. Publish package (Laravel 5.5+)
+## Setup and configuration
+1. Publish the package
 ```bash
 php artisan vendor:publish
 ```
-3. Configure package: {project_dir} > config > styleguide.php
-4. Add view directory: {project_dir} > resources > views > styleguide (Customize directory name in config file)
-5. Add blade files to view directory for each style component
-    * File names are used to auto-generate the style guide menu
-    * Order of menu items is customizable in the config file (menu variable)
-6. Blade methods to generate html:
+2. Configure the package: {project_dir} > config > styleguide.php
+3. Customize the templates published to resources/views/vendor/styleguide (Currently uses Foundation Zurb as the default)
+
+## Creating new pages
+1. Add new blade files to the components directory under resources/views/vendor/styleguide
+2. Component files are used to auto-generate the style guides navigation menu
+3. Ordering of the menu items is customizable using menu variable in the config file: config > styleguide.php
+
+## Formatting pages
+Blade methods used to generate html:
 ```php
 @component('styleguide::code-head')
     {{--Component Name Here--}}
