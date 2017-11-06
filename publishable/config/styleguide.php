@@ -2,12 +2,11 @@
 
 return [
 
+    /*
+     * Select views to load and their order for menu generation
+     */
     'menu' => [
-        'typography',
-        'buttons',
-        'badges',
-        'banners',
-        'footers'
+//        'buttons',
     ],
 
     'view_path' => 'styleguide',
