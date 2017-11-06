@@ -47,7 +47,8 @@ return [
     | Specify your application scripts to load
     */
     'scripts'     => [
-        'https://use.fontawesome.com/b9c1035ab3.js',
-        env('APP_URL') . '/js/app.js',
+        env('APP_URL') . '/js/manifest.js',
+        env('APP_URL') . '/js/vendor.js',
+        env('APP_URL') . '/js/app.js'
     ]
 ];
